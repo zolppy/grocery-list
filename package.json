@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "w-ts": "tsc --strict -w src/ts/script.ts --outDir dist/js/",
+    "w-ts": "tsc --strict -w --removeComments --sourceMap src/ts/script.ts --outDir dist/js/",
     "w-sass": "sass -w src/sass/style.scss dist/css/style.css",
-    "t-ts": "tsc --strict src/ts/script.ts --outDir dist/js/",
+    "t-ts": "tsc --strict --removeComments --sourceMap src/ts/script.ts --outDir dist/js/",
     "t-sass": "sass src/sass/style.scss dist/css/style.css",
     "m-js": "uglifyjs dist/js/script.js -o dist/js/script.min.js",
     "m-css": "uglifycss dist/css/style.css > dist/css/style.min.css",
