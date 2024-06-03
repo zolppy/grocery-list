@@ -6,66 +6,41 @@
     <meta name="description" content="" />
     <title>Lista de Compras</title>
     <link
+      rel="shortcut icon"
+      href="dist/img/yin-yang.svg"
+      type="image/x-icon"
+    />
+    <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
+    <link rel="stylesheet" href="dist/css/style.css" />
+    <script src="dist/js/script.js" defer></script>
   </head>
   <body>
     <main class="app__container">
-      <h1 class="app__main-title">Lista de Compras</h1>
+      <h1 class="app__main-title bold uppercase">Lista de Compras</h1>
       <section class="app__input-section">
-        <div class="app__input-wrapper">
+        <div>
           <label for="app__add-item">Adicionar item:</label>
           <input type="text" id="app__add-item" />
-          <button class="app__need-button">Preciso</button>
-          <button class="app__have-button">Tenho</button>
         </div>
+        <div>
+          <label for="app__item-category">Categoria:</label>
+          <select id="app__item-category">
+            <option value="need" selected>Preciso</option>
+            <option value="have">Tenho</option>
+          </select>
+        </div>
+        <button class="app__add-item-button">Adicionar</button>
       </section>
-      <section class="app__need-section">
-        <h2 class="app__secondary-title">Preciso</h2>
-        <ul class="app__need-items">
-          <li class="app__item">
-            <div class="app__check-wrapper">
-              <input type="checkbox" id="app__item-name-1" />
-              <label for="app__item-name-1">Leite</label>
-            </div>
-            <button class="app__delete-item">
-              <i class="bi bi-x"></i>
-            </button>
-          </li>
-          <li class="app__item">
-            <div class="app__check-wrapper">
-              <input type="checkbox" id="app__item-name-2" />
-              <label for="app__item-name-2">Ovos</label>
-            </div>
-            <button class="app__delete-item">
-              <i class="bi bi-x"></i>
-            </button>
-          </li>
-        </ul>
+      <section class="app__section">
+        <h2 class="app__secondary-title bold uppercase">Preciso</h2>
+        <ul class="app__items"></ul>
       </section>
-      <section class="app__have-section">
-        <h2 class="app__secondary-title">Tenho</h2>
-        <ul class="app__have-items">
-          <li class="app__item">
-            <div class="app__check-wrapper">
-              <input type="checkbox" id="app__item-name-3" />
-              <label for="app__item-name-3">Leite</label>
-            </div>
-            <button class="app__delete-item">
-              <i class="bi bi-x"></i>
-            </button>
-          </li>
-          <li class="app__item">
-            <div class="app__check-wrapper">
-              <input type="checkbox" id="app__item-name-4" />
-              <label for="app__item-name-4">Ovos</label>
-            </div>
-            <button class="app__delete-item">
-              <i class="bi bi-x"></i>
-            </button>
-          </li>
-        </ul>
+      <section class="app__section">
+        <h2 class="app__secondary-title bold uppercase">Tenho</h2>
+        <ul class="app__items"></ul>
       </section>
     </main>
   </body>
