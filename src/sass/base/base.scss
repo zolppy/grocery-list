@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+
+  body {
+    background-color: white;
+    color: white;
+    font-family: "Inter Regular";
+    font-size: 1rem;
+    font-style: normal;
+    font-variant: normal;
+    letter-spacing: 0;
+    line-height: 1.25;
+
+    h1,
+    h2 {
+      font: inherit;
+    }
+
+    button {
+      border: none;
+      font-family: "Inter Regular";
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    ul > li {
+      list-style-type: none;
+    }
+  }
+}

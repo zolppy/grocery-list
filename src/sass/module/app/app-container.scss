@@ -1,0 +1,11 @@
+.app__container {
+  align-items: center;
+  background-color: #377;
+  display: flex;
+  flex-direction: column;
+  margin-inline: auto;
+  min-height: 100svh;
+  padding: 0.7em;
+  row-gap: 2em;
+  width: clamp(320px, 100%, 480px);
+}
