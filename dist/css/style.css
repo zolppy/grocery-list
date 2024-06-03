@@ -73,10 +73,34 @@ html body ul > li {
   row-gap: 0.5em;
 }
 
+.app__input-wrapper {
+  display: flex;
+  column-gap: 0.5em;
+  align-items: center;
+}
+
+#app__add-item {
+  flex: 1;
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  color: white;
+}
+
+#app__item-category {
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  color: white;
+}
+
 .app__add-item-button {
   background-color: #737;
+  border-radius: 0.7em;
   color: white;
-  padding: 0.5em;
+  padding: 0.7em;
   transition: background-color 0.3s;
 }
 .app__add-item-button:hover {
@@ -108,6 +132,7 @@ html body ul > li {
   display: flex;
   justify-content: space-between;
   padding-inline: 0.5em;
+  border-radius: 0.5em;
 }
 
 .app__check-wrapper {

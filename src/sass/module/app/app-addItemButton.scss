@@ -1,7 +1,8 @@
 .app__add-item-button {
   background-color: #737;
+  border-radius: 0.7em;
   color: white;
-  padding: 0.5em;
+  padding: 0.7em;
   transition: background-color 0.3s;
 
   &:hover {
