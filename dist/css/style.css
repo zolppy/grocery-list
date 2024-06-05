@@ -1,11 +1,11 @@
 @font-face {
-  font-family: "Inter Regular";
-  src: url("/dist/font/inter/inter-regular.ttf") format("truetype");
+  font-family: "Roboto Regular";
+  src: url("/dist/font/roboto/roboto-regular.ttf") format("truetype");
   font-display: swap;
 }
 @font-face {
-  font-family: "Inter Bold";
-  src: url("/dist/font/inter/inter-regular.ttf") format("truetype");
+  font-family: "Roboto Bold";
+  src: url("/dist/font/roboto/roboto-bold.ttf") format("truetype");
   font-display: swap;
 }
 * {
@@ -18,22 +18,26 @@ html {
   font-size: 16px;
 }
 html body {
-  background-color: white;
-  color: white;
-  font-family: "Inter Regular";
+  background-color: #000;
+  color: #fff;
+  font-family: "Roboto Regular", cursive;
   font-size: 1rem;
   font-style: normal;
   font-variant: normal;
   letter-spacing: 0;
   line-height: 1.25;
 }
+html body p {
+  line-height: 1.5;
+}
 html body h1,
-html body h2 {
+html body h2,
+html body p {
   font: inherit;
 }
 html body button {
   border: none;
-  font-family: "Inter Regular";
+  font-family: "Roboto Regular", sans-serif;
 }
 html body button:hover {
   cursor: pointer;
@@ -46,13 +50,17 @@ html body ul > li {
   font-weight: 700 !important;
 }
 
+.hidden {
+  display: none !important;
+}
+
 .uppercase {
   text-transform: uppercase !important;
 }
 
 .app__container {
   align-items: center;
-  background-color: #377;
+  background-color: #333;
   display: flex;
   flex-direction: column;
   margin-inline: auto;
@@ -97,14 +105,14 @@ html body ul > li {
 }
 
 .app__add-item-button {
-  background-color: #737;
+  background-color: #00f;
   border-radius: 0.7em;
   color: white;
   padding: 0.7em;
   transition: background-color 0.3s;
 }
 .app__add-item-button:hover {
-  background-color: #636;
+  background-color: #00d;
 }
 
 .app__section {
@@ -128,10 +136,10 @@ html body ul > li {
 .app__item {
   align-items: center;
   align-self: stretch;
-  background-color: #337;
+  background-color: #666;
   display: flex;
   justify-content: space-between;
-  padding-inline: 0.5em;
+  padding: 0.5em;
   border-radius: 0.5em;
 }
 
@@ -143,7 +151,6 @@ html body ul > li {
 .app__delete-item {
   background-color: transparent;
   color: white;
-  font-size: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
