@@ -1,11 +1,13 @@
+@import "../../base/variables.scss";
+
 .app__add-item-button {
-  background-color: #737;
+  background-color: $btn-bg-color;
   border-radius: 0.7em;
   color: white;
   padding: 0.7em;
   transition: background-color 0.3s;
 
   &:hover {
-    background-color: #636;
+    background-color: $btn-hoved-bg-color;
   }
 }

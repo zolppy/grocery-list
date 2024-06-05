@@ -1,6 +1,8 @@
+@import "../../base/variables.scss";
+
 .app__container {
   align-items: center;
-  background-color: #377;
+  background-color: $container-bg-color;
   display: flex;
   flex-direction: column;
   margin-inline: auto;
