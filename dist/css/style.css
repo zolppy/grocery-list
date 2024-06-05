@@ -1,11 +1,11 @@
 @font-face {
   font-family: "Roboto Regular";
-  src: local("Roboto"), local("Roboto Regular"), local("Roboto-Regular"), url("/dist/font/roboto/roboto-regular.ttf") format("truetype");
+  src: local("Roboto"), local("Roboto Regular"), local("Roboto-Regular"), url("../font/roboto/roboto-regular.ttf") format("truetype");
   font-display: swap;
 }
 @font-face {
   font-family: "Roboto Bold";
-  src: local("Roboto"), local("Roboto Bold"), local("Roboto-Bold"), url("/dist/font/roboto/roboto-bold.ttf") format("truetype");
+  src: local("Roboto"), local("Roboto Bold"), local("Roboto-Bold"), url("../font/roboto/roboto-bold.ttf") format("truetype");
   font-display: swap;
 }
 * {
@@ -20,7 +20,7 @@ html {
 html body {
   background-color: #000;
   color: #fff;
-  font-family: "Roboto Regular", cursive;
+  font-family: "Roboto Regular", sans-serif;
   font-size: 1rem;
   font-style: normal;
   font-variant: normal;
@@ -43,7 +43,7 @@ html body h2 {
 }
 html body button {
   border: none;
-  font-family: "Roboto Regular", cursive;
+  font-family: "Roboto Regular", sans-serif;
 }
 html body button:hover {
   cursor: pointer;
@@ -110,7 +110,7 @@ html body ul > li {
   background-color: #00f;
   border-radius: 0.7em;
   color: white;
-  font-family: "Roboto Regular", cursive;
+  font-family: "Roboto Regular", sans-serif;
   padding: 0.7em;
   transition: background-color 0.3s;
 }

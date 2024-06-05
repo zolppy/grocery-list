@@ -1,17 +1,4 @@
-@font-face {
-  font-family: "Roboto Regular";
-  src: local("Roboto"), local("Roboto Regular"), local("Roboto-Regular"),
-    url("/dist/font/roboto/roboto-regular.ttf") format("truetype");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Roboto Bold";
-  src: local("Roboto"), local("Roboto Bold"), local("Roboto-Bold"),
-    url("/dist/font/roboto/roboto-bold.ttf") format("truetype");
-  font-display: swap;
-}
-
+@import "./base/font.scss";
 @import "./base/base.scss";
 @import "./base/generic.scss";
 @import "./module/app/app-container.scss";
