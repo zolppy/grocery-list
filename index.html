@@ -4,19 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
-        name="description"
-        content="Crie e gerencie sua lista de compras com facilidade e eficácia. Este projeto oferece uma
-        interface intuitiva e ajuda você a organizar suas compras de forma eficiente. Experimente agora!"
-    >
+      name="description"
+      content="Crie e gerencie sua lista de compras com facilidade e eficácia. Este projeto oferece uma interface intuitiva e ajuda você a organizar suas compras de forma eficiente. Experimente agora!"
+    />
     <title>Lista de Compras</title>
     <link
       rel="shortcut icon"
       href="dist/img/yin-yang.svg"
       type="image/x-icon"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
     <link rel="stylesheet" href="dist/css/style.min.css" />
     <script src="dist/js/script.min.js" defer></script>
@@ -27,7 +22,7 @@
       <section class="app__input-section">
         <div class="app__input-wrapper">
           <label for="app__add-item">Adicionar item:</label>
-          <input type="text" id="app__add-item" />
+          <input type="text" id="app__add-item" placeholder="Ovos" />
         </div>
         <div class="app__input-wrapper">
           <label for="app__item-category">Categoria:</label>
@@ -38,17 +33,13 @@
         </div>
         <button class="app__add-item-button">Adicionar</button>
       </section>
-      <section class="app__section" id="need-section">
+      <section class="app__section hidden" id="need-section">
         <h2 class="app__secondary-title bold uppercase">Preciso</h2>
-        <ul class="app__items">
-          <p>Vazio: comece a adicionar itens</p>
-        </ul>
+        <ul class="app__items"></ul>
       </section>
-      <section class="app__section" id="have-section">
+      <section class="app__section hidden" id="have-section">
         <h2 class="app__secondary-title bold uppercase">Tenho</h2>
-        <ul class="app__items">
-          <p>Vazio: comece a adicionar itens</p>
-        </ul>
+        <ul class="app__items"></ul>
       </section>
     </main>
   </body>
