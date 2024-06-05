@@ -17,7 +17,9 @@ const saveItems = (key: string) =>
   localStorage.setItem(key, JSON.stringify(items));
 
 const loadItems = () => {
-  const arr: any = JSON.parse(localStorage.getItem(KEY) as string);
+  const arr: IItem[] | undefined = JSON.parse(
+    localStorage.getItem(KEY) as string
+  );
 
   if (arr) {
     arr.forEach((itm: IItem) => {
